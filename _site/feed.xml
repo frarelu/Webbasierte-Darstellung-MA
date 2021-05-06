@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-05-06T23:49:55+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Webbasierte Darstellung zur Masterarbeit</title><subtitle>Diese Website ist Teil der gleichnamigen Masterarbeit, die an der Johannes Gutenberg-Universität Mainz im Fach Digitale Methodik in den Geistes- und Kulturwissenschaften eingereicht wurde.</subtitle><entry><title type="html">Konzeption und prototypische Entwicklung eines oxygen basierten Frameworks zur Edition osmanischer Liedtexte</title><link href="http://localhost:4000/2021/05/06/Konzeption-und-prototypische-Entwicklung-eines-oXygen-basierten-Frameworks-zur-Edition-osmanischer-Liedtexte.html" rel="alternate" type="text/html" title="Konzeption und prototypische Entwicklung eines oxygen basierten Frameworks zur Edition osmanischer Liedtexte" /><published>2021-05-06T00:00:00+02:00</published><updated>2021-05-06T00:00:00+02:00</updated><id>http://localhost:4000/2021/05/06/Konzeption%20und%20prototypische-Entwicklung%20eines%20oXygen%20basierten-Frameworks%20zur-Edition%20osmanischer-Liedtexte</id><content type="html" xml:base="http://localhost:4000/2021/05/06/Konzeption-und-prototypische-Entwicklung-eines-oXygen-basierten-Frameworks-zur-Edition-osmanischer-Liedtexte.html">&lt;h1 id=&quot;unterstützt-durch-ein-leitfadeninterview-zur-erhebung-des-vorwissens-der-perspektivischen-nutzerinnen--und-nutzergruppe&quot;&gt;Unterstützt durch ein Leitfadeninterview zur Erhebung des Vorwissens der perspektivischen Nutzerinnen- und Nutzergruppe.&lt;/h1&gt;
+
+&lt;h3 id=&quot;zielsetzung&quot;&gt;Zielsetzung&lt;/h3&gt;
+&lt;p&gt;Im Rahmen der gleichnamigen Masterarbeit wurden zuerst die Grundlagen der (digitalen) Edition dargestellt. Der Schwerpunkt lag dabei auf der Nachzeichnung des Editionsprozesses bis hin zu Editionswerkzeugen.
+Anhand der Theorie wurde ein Leitfadeninterview entwickelt, das mit Wissenschaftlerinnen und Wissenschaftlern, die an einer kritischen Edition osmanischer Liedtexte beteiligt sind, geführt wurde. Das Leitfadeninterview wurde qualitativ ausgewertet. Grundlage bildeten die folgenden deduktiv festgelegten Kategorien:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;individuelle Vorkenntnisse&lt;/li&gt;
+  &lt;li&gt;individuelle Erfahrungen&lt;/li&gt;
+  &lt;li&gt;Arbeitsweisen und technische Terminologie&lt;/li&gt;
+  &lt;li&gt;Nutzerinnen- sowie Nutzerkreis und Nachnutzung&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Zusätzlich wurde qualititiv analysiert, ob ein Zusammenhang zwischen Vorkenntnissen und dem Einsatz von Verzögerungsmarkern in den einzelnen Antworten nachzuweisen ist.&lt;/p&gt;
+
+&lt;p&gt;Auf dieser Grundlage wurden Gespräche mit den Wissenschaftlerinnen und Wissenschaftlern geführt, um die Vorkenntnisse und Erfahrungen zu erweitern und anschließend Anforderungen für das Framework zu erfassen.&lt;/p&gt;
+
+&lt;p&gt;Anforderungen:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Die Auszeichnung der osmanischen Liedtexte soll die bisherigen Möglichkeiten einschließen, das heißt, folgende Merkmale sollen zusätzlich zu den Metadaten ausgezeichnet werden können:
+    &lt;ol&gt;
+      &lt;li&gt;Überschriften&lt;/li&gt;
+      &lt;li&gt;einzelne Verse mit den Analysemöglichkeiten Terennün und Hauptvers des Liedtextes&lt;/li&gt;
+      &lt;li&gt;Aufführungsanweisungen&lt;/li&gt;
+      &lt;li&gt;Lemmata und Lesarten&lt;/li&gt;
+      &lt;li&gt;Provenienz&lt;/li&gt;
+      &lt;li&gt;editorische Anmerkungen&lt;/li&gt;
+      &lt;li&gt;Vermaß innerhalb der Metadaten&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Reduktion der Komplexität der Benutzeroberfläche&lt;/li&gt;
+  &lt;li&gt;Einbinden von Schaltflächen für die häufigsten Auszeichnungsschritte&lt;/li&gt;
+  &lt;li&gt;Die Auszeichnung soll den TEI-Standards entsprechen.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;umsetzung&quot;&gt;Umsetzung&lt;/h3&gt;
+
+&lt;p&gt;Das künftige Editionswerkzeug soll oXygen Author sein, da hier bereits die  Benutzeroberfläche vereinfacht ist.
+Das Framework wurde extern angelegt, um es später den Editorinnen und Editoren bereitstellen zu können. Zusätzlich wurde eine Verknüpfungsregel eingeführt, die besagt, dass das Framework nur bei XML-Dokumenten greift, die auf *_cmo.xml, *.cmo.xml, *_CMO.xml oder *.CMO.xml enden:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/Framework/verknuepfungsregel.png&quot; alt=&quot;Verknüpfungsregel&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Danach wurde das Schema eingebunden, das mithilfe des Dienstes &lt;a href=&quot;https://romabeta.tei-c.org/&quot;&gt;Roma - ODD Customization&lt;/a&gt; reduziert wurde:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/Framework/schemaeinbindung.png&quot; alt=&quot;Schemaeinbindung&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Für die Anpassung der Oberfläche wurde ein CSS eingebunden, das auf vorhandene CSS-Dokumente zugreift, die im oXygen-TEI-Framework enthalten sind:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/Framework/csseinbindung.png&quot; alt=&quot;CSS-Einbindung&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Das CSS wurde insofern angepasst, dass der Bereich der Metadaten in Teilen oder vollständig einklappbar ist, um eine möglichst fokussierte Arbeit am zu edierenden Text zu ermöglichen:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/Framework/faltbar.png&quot; alt=&quot;Einklappbarer Metadatenteil&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Darüber hinaus wurde die Symbolleiste erweitert. Dazu mussten Aktionen innerhalb des Frameworks definiert werden:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/Framework/aktionen.png&quot; alt=&quot;Übersicht Aktionen&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Alle diese Aktionen mussten mit einer einzigartigen ID, einem Namen und einer Beschreibung angelegt werden.&lt;/p&gt;
+
+&lt;p&gt;Danach wurden ein Icon zugeordent, der Geltungsbereich, in dem die Aktion ausgeführt werden kann mittels eines XPath-Ausdrucks festgelegt und ein Vorgang ausgewählt. Für alle Aktionen wurde ausgewählt, dass Text, der angewählt wird, wenn die Schaltfläche betätigt wird, von einem Element umschlossen wird oder dies rückgängig gemacht wird, falls das entsprechende Element schon den Text umschließt:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/Framework/akteinstellung.png&quot; alt=&quot;Anpassung der Aktionseinstellungen&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Das Element, mit dem der Text eingeschlossen wird, wird als Argumentwert übergeben. Wichtig ist hierbei, dass der namespace der TEI angegeben wird, damit das Element vom Schema erkannt wird. Gleichzeitig können Attributwerte sofort mit angelegt werden wie im konkreten Beispiel zu sehen ist:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/Framework/argument.png&quot; alt=&quot;Argumentwert festlegen&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Die definierten Aktionen können dann in der Symbolleiste eingebunden werden:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/Framework/symmenue.png&quot; alt=&quot;Einbindung von Aktionen in die Symbolleiste&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Die Festlegung des Geltungsbereiches bietet den Vorteil, dass die Aktionen nur dann zur Verfügung stehen, wenn sich im entsprechenden Bereich des edierten Textes befunden wird. Da in den Metadaten beispielsweise laut Schema keine Verse ausgezeichnet werden dürfen, wurde dies so im XPath-Ausdruck bestimmt und die Schaltfläche ist ausgegraut, wenn sich im Metadatenteil befunden wird:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/Framework/symboleng.png&quot; alt=&quot;Verfügbarkeit der Schaltflächen im teiHeader-Element&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Soll eine Aktion hingegen aus dem zu edierenden Stück heraus erfolgen, stehen wesentlich mehr Aktionen zur Verfügung:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/Framework/symbolweit.png&quot; alt=&quot;Verfügbarkeit der Schaltfläche im text-Element&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Der Prototyp des Frameworks ist weiter beliebig anpassbar. Er wurde mit einem projektspezifischen Template den Mitarbeiterinnen und Mitarbeitern des Projektes zur Verfügung gestellt, die die osmanischen Liedtexte edieren und steht gleichzeitig im &lt;a href=&quot;https://github.com/maxweberstiftung/CMO-prototype-framework-text-edition&quot;&gt;GitRepositorium&lt;/a&gt; der Max Weber Stiftung öffentlich zur Verfügung, da diese für den Bereich Digital Humanities im Projekt zuständig ist.&lt;/p&gt;</content><author><name></name></author><summary type="html">Unterstützt durch ein Leitfadeninterview zur Erhebung des Vorwissens der perspektivischen Nutzerinnen- und Nutzergruppe. Zielsetzung Im Rahmen der gleichnamigen Masterarbeit wurden zuerst die Grundlagen der (digitalen) Edition dargestellt. Der Schwerpunkt lag dabei auf der Nachzeichnung des Editionsprozesses bis hin zu Editionswerkzeugen. Anhand der Theorie wurde ein Leitfadeninterview entwickelt, das mit Wissenschaftlerinnen und Wissenschaftlern, die an einer kritischen Edition osmanischer Liedtexte beteiligt sind, geführt wurde. Das Leitfadeninterview wurde qualitativ ausgewertet. Grundlage bildeten die folgenden deduktiv festgelegten Kategorien: individuelle Vorkenntnisse individuelle Erfahrungen Arbeitsweisen und technische Terminologie Nutzerinnen- sowie Nutzerkreis und Nachnutzung Zusätzlich wurde qualititiv analysiert, ob ein Zusammenhang zwischen Vorkenntnissen und dem Einsatz von Verzögerungsmarkern in den einzelnen Antworten nachzuweisen ist. Auf dieser Grundlage wurden Gespräche mit den Wissenschaftlerinnen und Wissenschaftlern geführt, um die Vorkenntnisse und Erfahrungen zu erweitern und anschließend Anforderungen für das Framework zu erfassen. Anforderungen: Die Auszeichnung der osmanischen Liedtexte soll die bisherigen Möglichkeiten einschließen, das heißt, folgende Merkmale sollen zusätzlich zu den Metadaten ausgezeichnet werden können: Überschriften einzelne Verse mit den Analysemöglichkeiten Terennün und Hauptvers des Liedtextes Aufführungsanweisungen Lemmata und Lesarten Provenienz editorische Anmerkungen Vermaß innerhalb der Metadaten Reduktion der Komplexität der Benutzeroberfläche Einbinden von Schaltflächen für die häufigsten Auszeichnungsschritte Die Auszeichnung soll den TEI-Standards entsprechen. Umsetzung Das künftige Editionswerkzeug soll oXygen Author sein, da hier bereits die Benutzeroberfläche vereinfacht ist. Das Framework wurde extern angelegt, um es später den Editorinnen und Editoren bereitstellen zu können. Zusätzlich wurde eine Verknüpfungsregel eingeführt, die besagt, dass das Framework nur bei XML-Dokumenten greift, die auf *_cmo.xml, *.cmo.xml, *_CMO.xml oder *.CMO.xml enden: Danach wurde das Schema eingebunden, das mithilfe des Dienstes Roma - ODD Customization reduziert wurde: Für die Anpassung der Oberfläche wurde ein CSS eingebunden, das auf vorhandene CSS-Dokumente zugreift, die im oXygen-TEI-Framework enthalten sind: Das CSS wurde insofern angepasst, dass der Bereich der Metadaten in Teilen oder vollständig einklappbar ist, um eine möglichst fokussierte Arbeit am zu edierenden Text zu ermöglichen: Darüber hinaus wurde die Symbolleiste erweitert. Dazu mussten Aktionen innerhalb des Frameworks definiert werden: Alle diese Aktionen mussten mit einer einzigartigen ID, einem Namen und einer Beschreibung angelegt werden. Danach wurden ein Icon zugeordent, der Geltungsbereich, in dem die Aktion ausgeführt werden kann mittels eines XPath-Ausdrucks festgelegt und ein Vorgang ausgewählt. Für alle Aktionen wurde ausgewählt, dass Text, der angewählt wird, wenn die Schaltfläche betätigt wird, von einem Element umschlossen wird oder dies rückgängig gemacht wird, falls das entsprechende Element schon den Text umschließt: Das Element, mit dem der Text eingeschlossen wird, wird als Argumentwert übergeben. Wichtig ist hierbei, dass der namespace der TEI angegeben wird, damit das Element vom Schema erkannt wird. Gleichzeitig können Attributwerte sofort mit angelegt werden wie im konkreten Beispiel zu sehen ist: Die definierten Aktionen können dann in der Symbolleiste eingebunden werden: Die Festlegung des Geltungsbereiches bietet den Vorteil, dass die Aktionen nur dann zur Verfügung stehen, wenn sich im entsprechenden Bereich des edierten Textes befunden wird. Da in den Metadaten beispielsweise laut Schema keine Verse ausgezeichnet werden dürfen, wurde dies so im XPath-Ausdruck bestimmt und die Schaltfläche ist ausgegraut, wenn sich im Metadatenteil befunden wird: Soll eine Aktion hingegen aus dem zu edierenden Stück heraus erfolgen, stehen wesentlich mehr Aktionen zur Verfügung: Der Prototyp des Frameworks ist weiter beliebig anpassbar. Er wurde mit einem projektspezifischen Template den Mitarbeiterinnen und Mitarbeitern des Projektes zur Verfügung gestellt, die die osmanischen Liedtexte edieren und steht gleichzeitig im GitRepositorium der Max Weber Stiftung öffentlich zur Verfügung, da diese für den Bereich Digital Humanities im Projekt zuständig ist.</summary></entry></feed>
