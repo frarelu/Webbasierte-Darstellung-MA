@@ -33,7 +33,7 @@ Anforderungen:
 Das künftige Editionswerkzeug soll oXygen Author sein, da hier bereits die  Benutzeroberfläche vereinfacht ist.
 Das Framework wurde extern angelegt, um es später den Editorinnen und Editoren bereitstellen zu können. Zusätzlich wurde eine Verknüpfungsregel eingeführt, die besagt, dass das Framework nur bei XML-Dokumenten greift, die auf *_cmo.xml, *.cmo.xml, *_CMO.xml oder *.CMO.xml enden:
 
-![Verknüpfungsregel](/Framework/verknuepfungsregel.png)
+![Framework/verknuepfungsregel.PNG](Framework/verknuepfungsregel.PNG "Verknüpfungsregel")
 
 Danach wurde das Schema eingebunden, das mithilfe des Dienstes [Roma - ODD Customization](https://romabeta.tei-c.org/) reduziert wurde:
 
