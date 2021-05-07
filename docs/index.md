@@ -37,41 +37,40 @@ Das Framework wurde extern angelegt, um es später den Editorinnen und Editoren 
 
 Danach wurde das Schema eingebunden, das mithilfe des Dienstes [Roma - ODD Customization](https://romabeta.tei-c.org/) reduziert wurde:
 
-![Schemaeinbindung](/Framework/schemaeinbindung.png)
+![Framework/schemaeinbindung.PNG](Framework/schemaeinbindung.PNG "Schemaeinbindung")
 
 Für die Anpassung der Oberfläche wurde ein CSS eingebunden, das auf vorhandene CSS-Dokumente zugreift, die im oXygen-TEI-Framework enthalten sind:
 
-
-![CSS-Einbindung](/Framework/csseinbindung.png)
+![Framework/csseinbindung.PNG](Framework/csseinbindung.PNG "CSS-Einbindung")
 
 Das CSS wurde insofern angepasst, dass der Bereich der Metadaten in Teilen oder vollständig einklappbar ist, um eine möglichst fokussierte Arbeit am zu edierenden Text zu ermöglichen:
 
-![Einklappbarer Metadatenteil](/Framework/faltbar.png)
+![Framework/faltbar.PNG](Framework/faltbar.PNG "Einklappbarer Metadatenteil")
 
 Darüber hinaus wurde die Symbolleiste erweitert. Dazu mussten Aktionen innerhalb des Frameworks definiert werden:
 
-![Übersicht Aktionen](/Framework/aktionen.png)
+![Framework/aktionen.PNG](Framework/aktionen.PNG "Übersicht Aktionen")
 
 Alle diese Aktionen mussten mit einer einzigartigen ID, einem Namen und einer Beschreibung angelegt werden.
 
 Danach wurden ein Icon zugeordent, der Geltungsbereich, in dem die Aktion ausgeführt werden kann mittels eines XPath-Ausdrucks festgelegt und ein Vorgang ausgewählt. Für alle Aktionen wurde ausgewählt, dass Text, der angewählt wird, wenn die Schaltfläche betätigt wird, von einem Element umschlossen wird oder dies rückgängig gemacht wird, falls das entsprechende Element schon den Text umschließt:
 
-![Anpassung der Aktionseinstellungen](/Framework/akteinstellung.png)
+![Framework/akteinstellung.PNG](Framework/akteinstellung.PNG "Anpassung der Aktionseinstellungen")
 
 Das Element, mit dem der Text eingeschlossen wird, wird als Argumentwert übergeben. Wichtig ist hierbei, dass der namespace der TEI angegeben wird, damit das Element vom Schema erkannt wird. Gleichzeitig können Attributwerte sofort mit angelegt werden wie im konkreten Beispiel zu sehen ist:
 
-![Argumentwert festlegen](/Framework/argument.png)
+![Framework/argument.PNG](Framework/argument.PNG "Argumentwert festlegen")
 
 Die definierten Aktionen können dann in der Symbolleiste eingebunden werden:
 
-![Einbindung von Aktionen in die Symbolleiste](/Framework/symmenue.png)
+![Framework/symmenue.PNG](Framework/symmenue.PNG "Einbindung von Aktionen in die Symbolleiste")
 
 Die Festlegung des Geltungsbereiches bietet den Vorteil, dass die Aktionen nur dann zur Verfügung stehen, wenn sich im entsprechenden Bereich des edierten Textes befunden wird. Da in den Metadaten beispielsweise laut Schema keine Verse ausgezeichnet werden dürfen, wurde dies so im XPath-Ausdruck bestimmt und die Schaltfläche ist ausgegraut, wenn sich im Metadatenteil befunden wird:
 
-![Verfügbarkeit der Schaltflächen im teiHeader-Element](/Framework/symboleng.png)
+![Framework/symboleng.PNG](Framework/symboleng.PNG "Verfügbarkeit der Schaltflächen im teiHeader-Element")
 
 Soll eine Aktion hingegen aus dem zu edierenden Stück heraus erfolgen, stehen wesentlich mehr Aktionen zur Verfügung:
 
-![Verfügbarkeit der Schaltfläche im text-Element](/Framework/symbolweit.png)
+![Framework/symbolweit.PNG](Framework/symbolweit.PNG "Verfügbarkeit der Schaltfläche im text-Element")
 
-Der Prototyp des Frameworks ist weiter beliebig anpassbar. Es wurde mit einem projektspezifischen Template den Mitarbeiterinnen und Mitarbeitern des Projektes zur Verfügung gestellt, die die osmanischen Liedtexte edieren und steht gleichzeitig im [GitRepositorium](https://github.com/maxweberstiftung/CMO-prototype-framework-text-edition) der Max Weber Stiftung öffentlich zur Verfügung, da diese für den Bereich Digital Humanities im Projekt zuständig ist.
+Der Prototyp des Frameworks ist beliebig anpassbar. Es wurde mit einem projektspezifischen Template den Mitarbeiterinnen und Mitarbeitern des Projektes zur Verfügung gestellt, die die osmanischen Liedtexte edieren und steht gleichzeitig im [GitRepositorium](https://github.com/maxweberstiftung/CMO-prototype-framework-text-edition) der Max Weber Stiftung öffentlich zur Verfügung, da diese für den Bereich Digital Humanities im Projekt zuständig ist.
