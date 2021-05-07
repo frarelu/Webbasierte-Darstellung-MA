@@ -10,7 +10,7 @@ Anhand der Theorie wurde ein Leitfadeninterview entwickelt, das mit Wissenschaft
 1. Arbeitsweisen und technische Terminologie
 1. Nutzerinnen- sowie Nutzerkreis und Nachnutzung
 
-Zusätzlich wurde qualititiv analysiert, ob ein Zusammenhang zwischen Vorkenntnissen und dem Einsatz von Verzögerungsmarkern in den einzelnen Antworten nachzuweisen ist.
+Zusätzlich wurde quantitativ analysiert, ob ein Zusammenhang zwischen Vorkenntnissen und dem Einsatz von Verzögerungsmarkern in den einzelnen Antworten nachzuweisen ist.
 
 Auf dieser Grundlage wurden Gespräche mit den Wissenschaftlerinnen und Wissenschaftlern geführt, um die Vorkenntnisse und Erfahrungen zu erweitern und anschließend Anforderungen für das Framework zu erfassen.
 
@@ -23,7 +23,7 @@ Anforderungen:
     1. Lemmata und Lesarten 
     1. Provenienz
     1. editorische Anmerkungen
-    1. Vermaß innerhalb der Metadaten
+    1. Versmaß innerhalb der Metadaten
 
 1. Reduktion der Komplexität der Benutzeroberfläche
 1. Einbinden von Schaltflächen für die häufigsten Auszeichnungsschritte
@@ -75,4 +75,4 @@ Soll eine Aktion hingegen aus dem zu edierenden Stück heraus erfolgen, stehen w
 
 ![Verfügbarkeit der Schaltfläche im text-Element](/Framework/symbolweit.png)
 
-Der Prototyp des Frameworks ist weiter beliebig anpassbar. Er wurde mit einem projektspezifischen Template den Mitarbeiterinnen und Mitarbeitern des Projektes zur Verfügung gestellt, die die osmanischen Liedtexte edieren und steht gleichzeitig im [GitRepositorium](https://github.com/maxweberstiftung/CMO-prototype-framework-text-edition) der Max Weber Stiftung öffentlich zur Verfügung, da diese für den Bereich Digital Humanities im Projekt zuständig ist.
+Der Prototyp des Frameworks ist weiter beliebig anpassbar. Es wurde mit einem projektspezifischen Template den Mitarbeiterinnen und Mitarbeitern des Projektes zur Verfügung gestellt, die die osmanischen Liedtexte edieren und steht gleichzeitig im [GitRepositorium](https://github.com/maxweberstiftung/CMO-prototype-framework-text-edition) der Max Weber Stiftung öffentlich zur Verfügung, da diese für den Bereich Digital Humanities im Projekt zuständig ist.
