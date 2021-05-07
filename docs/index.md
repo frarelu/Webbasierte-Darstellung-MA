@@ -1,4 +1,4 @@
-# Unterstützt durch ein Leitfadeninterview zur Erhebung des Vorwissens der perspektivischen Nutzerinnen- und Nutzergruppe.
+# Konzeption und prototypische Entwicklung eines oXygen-basierten Frameworks zur Edition osmanischer Liedtexte. Unterstützt durch ein Leitfadeninterview zur Erhebung des Vorwissens der perspektivischen Nutzerinnen- und Nutzergruppe.
 
 ### Zielsetzung
 Im Rahmen der gleichnamigen Masterarbeit wurden zuerst die Grundlagen der (digitalen) Edition dargestellt. Der Schwerpunkt lag dabei auf der Nachzeichnung des Editionsprozesses bis hin zu Editionswerkzeugen.
